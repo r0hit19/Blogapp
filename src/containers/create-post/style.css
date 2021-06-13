@@ -1,0 +1,53 @@
+.createpost{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
+.createpost>p{
+    margin-left: 10px;
+}
+.postimageupload>input{
+    display: none;
+}
+.postcontent{
+    width: 100%;
+    
+}
+.post{
+    background-color: rgb(214, 210, 211);
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.postcontent>textarea{
+    border:1px solid  rgb(228, 225, 225);
+    width: 100%;
+    margin-top: 10px;
+    object-fit: cover;
+}
+.postcontent>textarea:focus{
+    border:1px solid  rgb(206, 202, 202);
+
+}
+.postbottom{
+    display: flex;
+}
+#image-preview{
+    display: none;
+    height: 70px;
+    margin-bottom: 10px;
+
+}
+.uploadbtn{
+    width: 100px;
+    height: 30px;
+    margin-top: 9px;
+}
+.btn{
+    width: 100%;
+    padding-left:470px
+}

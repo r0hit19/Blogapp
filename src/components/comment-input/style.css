@@ -1,0 +1,26 @@
+.commentinput{
+    display: flex;
+    justify-content: space-between;
+}
+.commentinputtextarea{
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    height: 30px;
+    border: 1px gray solid ;
+}
+.commentinputtextarea:focus{
+    outline: none;
+    height: 30px;
+}
+.commentinput>.commentinputbutton{
+    background-color:rgb(0, 0, 0);
+    color: whitesmoke;
+    font-weight: 500;
+    width: 10%;
+    height:5% ;
+    margin-top: 14px;
+    border-radius: 10px;
+}

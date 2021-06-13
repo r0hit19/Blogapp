@@ -1,0 +1,41 @@
+.postheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.postheadercontent{
+    display: flex;
+    align-items: center;
+}
+.postheadercontentprofilepic{
+    height: 35px;
+    border-radius: 20px;
+}
+.post{
+    background-color: whitesmoke;
+    max-width: 600px;
+    width: 90vw;
+    padding: 16px;
+}
+.postheadercontent>p{
+    margin-left: 10px;
+}
+.postdeletebtn{
+    background-color: gainsboro;
+    border: none;
+}
+.postdeletebtn:hover{
+    cursor: pointer;
+}
+.postmaincontentimage{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.modalheader{
+    display: flex;
+    border-bottom: 1px gray solid;
+    justify-content: space-between;
+}
