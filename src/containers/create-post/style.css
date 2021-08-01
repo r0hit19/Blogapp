@@ -4,6 +4,7 @@
     justify-content: center;
     padding-left: 10px;
     padding-top: 10px;
+    background-color: whitesmoke;
     
 }
 .createpost>p{
@@ -17,7 +18,7 @@
     
 }
 .post{
-    background-color: rgb(214, 210, 211);
+    background-color: rgb(248, 247, 247);
     width: 100%;
     padding: 20px;
     justify-content: center;
@@ -30,7 +31,7 @@
     object-fit: cover;
 }
 .postcontent>textarea:focus{
-    border:1px solid  rgb(206, 202, 202);
+    border:1px solid  rgb(158, 121, 121);
 
 }
 .postbottom{

@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(216, 209, 200);
 }
 .postheadercontent{
     display: flex;
@@ -12,7 +13,7 @@
     border-radius: 20px;
 }
 .post{
-    background-color: whitesmoke;
+    background-color: rgb(241, 240, 240);
     max-width: 600px;
     width: 90vw;
     padding: 16px;

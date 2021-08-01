@@ -25,7 +25,6 @@ export default function Post({profileUrl,username,id,photoURL,caption,comments,e
         //delete the post info from firebase firestore
 
         db.collection('posts').doc(id).delete().then(function(){
-            alert("Post deleted successfully");
         }).catch(function(error){alert(`Error: ${error}`)})
         
     

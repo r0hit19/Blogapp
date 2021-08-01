@@ -8,3 +8,7 @@
     font-size: 14px;
     font-weight: 500;
 }
+.signinbtn:hover{
+    cursor: pointer;
+    background-color:rgb(55, 55, 107);
+}

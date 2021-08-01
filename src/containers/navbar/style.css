@@ -32,3 +32,10 @@
 .navbarusername{
     margin-left:10px;
 }
+.Logo-content{
+    display: flex;
+    flex-direction: row;
+}
+.Logo-content>p{
+    margin-left: 5%;
+}
