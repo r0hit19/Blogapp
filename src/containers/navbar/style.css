@@ -39,3 +39,6 @@
 .Logo-content>p{
     margin-left: 5%;
 }
+.Logo-content>p:hover{
+    cursor:pointer;
+}

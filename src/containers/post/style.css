@@ -13,7 +13,7 @@
     border-radius: 20px;
 }
 .post{
-    background-color: rgb(241, 240, 240);
+    background-color:rgb(241,240,240);
     max-width: 600px;
     width: 90vw;
     padding: 16px;
@@ -27,7 +27,9 @@
 }
 .postdeletebtn:hover{
     cursor: pointer;
+    background-color: rgb(182, 3, 3);
 }
+
 .postmaincontentimage{
     width: 100%;
     margin-top: 15px;

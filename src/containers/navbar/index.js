@@ -4,6 +4,7 @@ import { SignInBtn } from '../../components';
 import { UserContext } from '../../contexts/user';
 import { db } from '../../firebase';
 import "./style.css";
+import { BiX } from "react-icons/bi";
 import Modal from 'react-modal'
 export default function Navbar(){
     const[modalIsOpen,setModalIsOpen]=useState(false)
@@ -21,10 +22,9 @@ export default function Navbar(){
 
     return <div className="navbar">
     <div className="Logo-content">
-        <h4>Blogspot</h4>
+        <h4>QnA_Spot</h4>
         
-        <p onClick={()=>setModalIsOpen(true)}>About</p>
-        <p>Documentation</p></div>
+        <p className="about" onClick={()=>setModalIsOpen(true)}>About</p></div>
         <Modal isOpen={modalIsOpen}
         style={
             {
@@ -37,7 +37,7 @@ export default function Navbar(){
         >
          <div className="modalheader">
             <h1>About</h1>
-            <button onClick={()=>{setModalIsOpen(false)}}>close</button>
+            <button onClick={()=>{setModalIsOpen(false)}}><BiX /></button>
         </div>
         <div className="modalheader">
             This is about

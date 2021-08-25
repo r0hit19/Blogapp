@@ -3,7 +3,8 @@ import { Comment, CommentInput } from "../../components";
 import { UserContext } from "../../contexts/user";
 import { db, storage } from "../../firebase";
 import Modal from 'react-modal';
-
+import { BiX } from "react-icons/bi";
+import { BiTrash } from "react-icons/bi";
 import "./style.css";
 
 export default function Post({profileUrl,username,id,photoURL,caption,comments,email,timestamp}){
@@ -36,7 +37,7 @@ export default function Post({profileUrl,username,id,photoURL,caption,comments,e
         <img className="postheadercontentprofilepic" src={profileUrl}/>
             <p>{username}</p>
         </div>
-        {user!==null && user.email==email? <button id="delete-btn" onClick={deletePost} className="postdeletebtn" >Delete</button>:<></>}
+        {user!==null && user.email==email? <button id="delete-btn" onClick={deletePost} className="postdeletebtn" ><BiTrash /></button>:<></>}
        
            
         </div>
@@ -65,7 +66,11 @@ export default function Post({profileUrl,username,id,photoURL,caption,comments,e
         >
         <div className="modalheader">
             <h1>Comments</h1>
-            <button onClick={()=>{setModalIsOpen(false)}}>close</button>
+            <button onClick={()=>{setModalIsOpen(false)}} type="button" class="btn-close" aria-label="Close">
+            <BiX />
+            </button>
+    
+
         </div>
         <div className="modalbody">
             
@@ -77,4 +82,6 @@ export default function Post({profileUrl,username,id,photoURL,caption,comments,e
        
         {user?<CommentInput comments={comments} id={id}/>:<></>}
     </div>;
+
+
 }
